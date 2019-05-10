@@ -17,7 +17,8 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
+  max-width: 1366px;
   display: flex;
   margin: 0 auto;
 }
@@ -28,6 +29,7 @@ body {
   height: calc(100vh - 128px);
   display: flex;
   align-items: center;
+  padding: 0 30px;
   transition: height 0.4s;
 
   .main-page {
@@ -126,54 +128,59 @@ body {
     .b-txt-1 {
       top: 0;
       left: 0;
-      &:before {
-        content: '';
-        width: calc(90vw - 180px);
-        height: 1px;
-        position: absolute;
-        top: 25px;
-        left: 85px;
-        background-color: rgba(255, 255, 255, 0.3);
-      }
     }
     .b-txt-2 {
       top: 0;
       right: 0;
-      &:before {
-        content: '';
-        width: 1px;
-        height: calc(90vh - 180px);
-        position: absolute;
-        top: 82px;
-        right: 18px;
-        background-color: rgba(255, 255, 255, 0.3);
-      }
     }
     .b-txt-3 {
       bottom: 0;
       left: 0;
-      &:before {
-        content: '';
-        width: 1px;
-        height: calc(90vh - 180px);
-        position: absolute;
-        bottom: 82px;
-        left: 18px;
-        background-color: rgba(255, 255, 255, 0.3);
-      }
     }
     .b-txt-4 {
       bottom: 0;
       right: 0;
-      &:before {
-        content: '';
-        width: calc(90vw - 180px);
-        height: 1px;
-        position: absolute;
-        bottom: 25px;
-        right: 85px;
-        background-color: rgba(255, 255, 255, 0.3);
-      }
+    }
+
+    .line-1 {
+      display: block;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: calc(100% - 130px);
+      height: 1px;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .line-2 {
+      display: block;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: 1px;
+      height: calc(100% - 130px);
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+    .line-3 {
+      display: block;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: calc(100% - 130px);
+      height: 1px;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .line-4 {
+      display: block;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.3);
+      width: 1px;
+      height: calc(100% - 130px);
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
     }
 
     .result-fortune {
