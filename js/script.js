@@ -36,6 +36,8 @@
       startBtn.style.display = 'none';
       mainArea.classList.add('active');
       startArea.classList.add('active');
+      titleType.innerHTML = '';
+      txtType.innerHTML = '';
       poemType();
       $('.main-page')
         .delay(450)
@@ -81,8 +83,6 @@
         startBtn.style.display = 'block';
       });
     startBtn.classList.add('disabled');
-    titleType.innerHTML = '';
-    txtType.innerHTML = '';
   }
 
   startBtn.addEventListener('click', startHandler);
