@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Noto Serif TC', serif;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.35), black), url(../images/main-bg.jpg);
+  background-image: -o-radial-gradient(rgba(0, 0, 0, 0.35), black), url(../images/main-bg.jpg);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.35), black), url(../images/main-bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 1366px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.main-area {
+  max-width: 1366px;
+  height: calc(100vh - 128px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: height 0.4s;
+  -o-transition: height 0.4s;
+  transition: height 0.4s;
+}
+
+.main-area .main-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-area .title {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: #fff;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.main-area .info {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.main-area .info .step {
+  margin-bottom: 40px;
+}
+
+.main-area .info .step ul {
+  list-style: none;
+}
+
+.main-area .info .step li {
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.main-area .info .subtitle {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.main-area .info .category .select-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 368px;
+  height: 96px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-area .info .category label {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  width: 112px;
+  height: 40px;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.main-area .info .category label:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.main-area .info .category .radio-btn {
+  display: none;
+}
+
+.main-area .info .category .radio-btn:checked + label {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-area .secondary-page {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  -webkit-transition: display 0.4s;
+  -o-transition: display 0.4s;
+  transition: display 0.4s;
+}
+
+.main-area .secondary-page .border-txt {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 36px;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+}
+
+.main-area .secondary-page .b-txt-1 {
+  top: 0;
+  left: 0;
+}
+
+.main-area .secondary-page .b-txt-1:before {
+  content: '';
+  width: 1200px;
+  height: 1px;
+  position: absolute;
+  top: 25px;
+  left: 85px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-area .secondary-page .b-txt-2 {
+  top: 0;
+  right: 0;
+}
+
+.main-area .secondary-page .b-txt-2:before {
+  content: '';
+  width: 1px;
+  height: calc(90vh - 180px);
+  position: absolute;
+  top: 82px;
+  right: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-area .secondary-page .b-txt-3 {
+  bottom: 0;
+  left: 0;
+}
+
+.main-area .secondary-page .b-txt-3:before {
+  content: '';
+  width: 1px;
+  height: calc(90vh - 180px);
+  position: absolute;
+  bottom: 82px;
+  left: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-area .secondary-page .b-txt-4 {
+  bottom: 0;
+  right: 0;
+}
+
+.main-area .secondary-page .b-txt-4:before {
+  content: '';
+  width: 1200px;
+  height: 1px;
+  position: absolute;
+  bottom: 25px;
+  right: 85px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-area .secondary-page .result-fortune {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-family: 'Noto Sans TC', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-area .secondary-page .result-fortune .r-number {
+  font-size: 24px;
+  letter-spacing: 42px;
+}
+
+.main-area .secondary-page .result-fortune .r-type {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 900;
+  font-size: 240px;
+}
+
+.main-area .secondary-page .result-fortune .r-index {
+  font-size: 24px;
+  letter-spacing: 42px;
+}
+
+.main-area .secondary-page .result-poem {
+  color: #fff;
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.main-area .secondary-page .result-poem .sign-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 90px;
+}
+
+.main-area .secondary-page .result-poem .sign-area .sign {
+  margin-bottom: 40px;
+}
+
+.main-area .secondary-page .result-poem .sign-area .s-title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.main-area .secondary-page .result-poem .sign-area .s-txt {
+  width: 240px;
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.main-area .secondary-page .result-poem .sign-area .sign-2 > .s-txt {
+  width: 352px;
+}
+
+.main-area .secondary-page .result-poem .sign-area .reset-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 55px;
+  border: 1px solid #ffffff;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.main-area .secondary-page .result-poem .sign-area .reset-btn:hover {
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main-area .secondary-page .result-poem .sign-area .reset-btn:focus {
+  outline: 0;
+}
+
+.main-area .secondary-page .result-poem .poem-area {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  height: 280px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 140px;
+}
+
+.main-area .secondary-page .result-poem .p-number {
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-left: 24px;
+}
+
+.main-area .secondary-page .result-poem .p-content {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.main-area .secondary-page .result-poem .p-content p {
+  margin-left: 40px;
+}
+
+.main-area .secondary-page .result-poem .p-content p:last-child {
+  margin-left: 0;
+}
+
+.main-area .secondary-page.fadeIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-area.active {
+  height: 100vh;
+}
+
+.start-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 128px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-transition: height 0.4s;
+  -o-transition: height 0.4s;
+  transition: height 0.4s;
+}
+
+.start-area .start-btn {
+  width: 350px;
+  padding: 9px 0;
+  border: 1px solid #000000;
+  font-size: 24px;
+  color: #000;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.start-area .start-btn:hover {
+  color: #fff;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.start-area .start-btn:focus {
+  outline: 0;
+}
+
+.start-area .start-btn.disabled {
+  color: #b7b7b7;
+  border: 1px solid #d8d8d8;
+  background-color: #d8d8d8;
+}
+
+.start-area .start-btn.disabled:hover {
+  cursor: default;
+  border: 1px solid #d8d8d8;
+  background-color: #d8d8d8;
+}
+
+.start-area.active {
+  height: 0;
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */

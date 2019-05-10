@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900|Noto+Serif+TC:400,500,600,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Draw Lots</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="main-area">
+        <div class="container main-page">
+          <h1 class="title">線上求籤。</h1>
+          <div class="info">
+            <div class="step">
+              <h2 class="subtitle">求籤步驟</h2>
+              <ul>
+                <li>① 請虔誠地在心中默念您的姓名、出生年月日、住址</li>
+                <li>② 選擇欲請教的求籤類別後，誠心地在心中詳細說明</li>
+                <li>③ 說明完後即可點選「開始求籤」按鈕進行線上求籤</li>
+              </ul>
+            </div>
+            <div class="category">
+              <h2 class="subtitle">求籤類別</h2>
+              <div class="select-list">
+                <div class="s-group s-1">
+                  <input type="radio" id="select-1" class="radio-btn" name="category" />
+                  <label for="select-1">網站上線</label>
+                </div>
+                <div class="s-group s-2">
+                  <input type="radio" id="select-2" class="radio-btn" name="category" />
+                  <label for="select-2">感情姻緣</label>
+                </div>
+                <div class="s-group s-3">
+                  <input type="radio" id="select-3" class="radio-btn" name="category" />
+                  <label for="select-3">事業工作</label>
+                </div>
+                <div class="s-group s-4">
+                  <input type="radio" id="select-4" class="radio-btn" name="category" />
+                  <label for="select-4">家庭生活</label>
+                </div>
+                <div class="s-group s-5">
+                  <input type="radio" id="select-5" class="radio-btn" name="category" />
+                  <label for="select-5">求財運勢</label>
+                </div>
+                <div class="s-group s-6">
+                  <input type="radio" id="select-6" class="radio-btn" name="category" />
+                  <label for="select-6">參選總統</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container secondary-page">
+          <div class="border-txt b-txt-1">線</div>
+          <div class="border-txt b-txt-2">上</div>
+          <div class="border-txt b-txt-3">求</div>
+          <div class="border-txt b-txt-4">籤</div>
+          <div class="result-fortune">
+            <div class="r-number">第四十八籤</div>
+            <div class="r-type"></div>
+            <div class="r-index">【戊辛】</div>
+          </div>
+          <div class="result-poem">
+            <div class="sign-area">
+              <div class="sign sign-1">
+                <div class="s-title">聖意</div>
+                <div class="s-txt">遇貴者　訟和平　病驚險　莫求名<br />財物耗　婚宜停　逢寅字　事漸亨</div>
+              </div>
+              <div class="sign sign-2">
+                <div class="s-title">解曰</div>
+                <div class="s-txt">
+                  此籤家道不安　須防人口舌　怨恨臨門　財有失<br />逢貴人提挈方保　漸亨不成　多口舌<br />問婚訟平　病有驚　財物耗散　名利空虛<br />只宜守舊　不利遠行　防親人侵損也
+                </div>
+              </div>
+              <button class="reset-btn">重新求籤</button>
+            </div>
+            <div class="poem-area">
+              <div class="poem">
+                <div class="p-number">第四十八籤︻戊辛︼<span class="p-type"></span></div>
+                <div class="p-content">
+                  <p>登山涉水正天寒</p>
+                  <p>兄弟姻親那得安</p>
+                  <p>不遇虎頭人一喚</p>
+                  <p>全家誰保汝重歡</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="start-area">
+        <div class="container">
+          <button class="start-btn disabled">開始求籤</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
