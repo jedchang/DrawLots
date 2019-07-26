@@ -1,7 +1,6 @@
 # JS-DrawLots
 
-![image](https://img.shields.io/badge/JavaScript-exercise-brightgreen.svg)
-![image](https://img.shields.io/badge/jQuery-exercise-brightgreen.svg)
+![image](https://img.shields.io/badge/JavaScript-exercise-F0DB4F.svg) ![image](https://img.shields.io/badge/SCSS-exercise-CD6799.svg)
 
 ![images](https://github.com/jedchang/JS-DrawLots/blob/master/preview.jpg)
 
